@@ -3,15 +3,53 @@
 <head>
   <meta charset="UTF-8">
   <title>Light-Watcher</title>
+  <script src="https://cdn.tailwindcss.com"></script>
 </head>
-<body>
-  <h1>Проект Light-Watcher</h1>
-  <p>Мониторинг сети и батареи для ESP32.</p>
-  <ul>
-    <li>Уведомления через Telegram</li>
-    <li>OTA обновление по WiFi</li>
-    <li>Экономия энергии</li>
-  </ul>
-  <p><a href="https://github.com/ваш_логин/Light-Watcher">Репозиторий на GitHub</a></p>
+<body class="bg-gray-100 text-gray-800">
+
+<header class="bg-blue-600 text-white p-4">
+  <h1 class="text-3xl font-bold">Light-Watcher</h1>
+  <nav>
+    <a href="#about" class="mr-4">О проекте</a>
+    <a href="#download" class="mr-4">Скачать</a>
+    <a href="#video">Видео</a>
+  </nav>
+</header>
+
+<section id="about" class="p-8">
+  <h2 class="text-2xl font-bold mb-4">О проекте</h2>
+  <p>Light-Watcher — система мониторинга сети и батареи для ESP32 с уведомлениями в Telegram и OTA обновлением.</p>
+</section>
+
+<section id="features" class="p-8 grid grid-cols-1 md:grid-cols-3 gap-4">
+  <div class="bg-white p-4 rounded shadow">
+    <h3 class="font-bold mb-2">Уведомления</h3>
+    <p>Отслеживай состояние сети и батареи через Telegram.</p>
+  </div>
+  <div class="bg-white p-4 rounded shadow">
+    <h3 class="font-bold mb-2">OTA Обновления</h3>
+    <p>Обновление прошивки ESP32 по WiFi без ПК.</p>
+  </div>
+  <div class="bg-white p-4 rounded shadow">
+    <h3 class="font-bold mb-2">Энергосбережение</h3>
+    <p>Минимальное потребление энергии, подходит для PowerBank.</p>
+  </div>
+</section>
+
+<section id="download" class="p-8 text-center">
+  <h2 class="text-2xl font-bold mb-4">Скачать прошивку</h2>
+  <a href="https://github.com/ваш_логин/Light-Watcher/releases/latest/download/Light_Watcher_V1.0.bin" 
+     class="bg-blue-600 text-white px-6 py-3 rounded shadow hover:bg-blue-700">Скачать .bin</a>
+</section>
+
+<section id="video" class="p-8 text-center">
+  <h2 class="text-2xl font-bold mb-4">Видеообзор</h2>
+  <iframe width="560" height="315" src="https://www.youtube.com/embed/ВашаСсылка" frameborder="0" allowfullscreen></iframe>
+</section>
+
+<footer class="bg-gray-800 text-white p-4 text-center">
+  <p>GitHub: <a href="https://github.com/ваш_логин/Light-Watcher" class="underline">Light-Watcher</a></p>
+</footer>
+
 </body>
 </html>
