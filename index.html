@@ -2,53 +2,68 @@
 <html lang="ru">
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Light-Watcher</title>
   <script src="https://cdn.tailwindcss.com"></script>
 </head>
-<body class="bg-gray-100 text-gray-800">
+<body class="bg-gray-100 text-gray-800 font-sans">
 
-<header class="bg-blue-600 text-white p-4">
-  <h1 class="text-3xl font-bold">Light-Watcher</h1>
-  <nav>
-    <a href="#about" class="mr-4">О проекте</a>
-    <a href="#download" class="mr-4">Скачать</a>
-    <a href="#video">Видео</a>
-  </nav>
+<!-- Хедер -->
+<header class="bg-blue-600 text-white p-6">
+  <div class="container mx-auto flex flex-col md:flex-row justify-between items-center">
+    <h1 class="text-3xl font-bold mb-2 md:mb-0">Light-Watcher</h1>
+    <nav class="space-x-4">
+      <a href="#about" class="hover:underline">О проекте</a>
+      <a href="#features" class="hover:underline">Фичи</a>
+      <a href="#download" class="hover:underline">Скачать</a>
+      <a href="#video" class="hover:underline">Видео</a>
+    </nav>
+  </div>
 </header>
 
-<section id="about" class="p-8">
+<!-- О проекте -->
+<section id="about" class="container mx-auto p-8 text-center">
   <h2 class="text-2xl font-bold mb-4">О проекте</h2>
-  <p>Light-Watcher — система мониторинга сети и батареи для ESP32 с уведомлениями в Telegram и OTA обновлением.</p>
+  <p class="mb-4">Light-Watcher — система мониторинга состояния сети и батареи для ESP32 с уведомлениями в Telegram и OTA обновлением.</p>
+  <p>Идеально подходит для PowerBank и критических устройств, чтобы экономить заряд.</p>
 </section>
 
-<section id="features" class="p-8 grid grid-cols-1 md:grid-cols-3 gap-4">
-  <div class="bg-white p-4 rounded shadow">
-    <h3 class="font-bold mb-2">Уведомления</h3>
-    <p>Отслеживай состояние сети и батареи через Telegram.</p>
+<!-- Фичи -->
+<section id="features" class="container mx-auto p-8 grid grid-cols-1 md:grid-cols-3 gap-6">
+  <div class="bg-white p-6 rounded shadow text-center">
+    <h3 class="font-bold text-xl mb-2">Уведомления</h3>
+    <p>Отслеживай сеть и батарею через Telegram, будь в курсе всегда.</p>
   </div>
-  <div class="bg-white p-4 rounded shadow">
-    <h3 class="font-bold mb-2">OTA Обновления</h3>
-    <p>Обновление прошивки ESP32 по WiFi без ПК.</p>
+  <div class="bg-white p-6 rounded shadow text-center">
+    <h3 class="font-bold text-xl mb-2">OTA обновление</h3>
+    <p>Обновляй прошивку ESP32 по WiFi без ПК и кабелей.</p>
   </div>
-  <div class="bg-white p-4 rounded shadow">
-    <h3 class="font-bold mb-2">Энергосбережение</h3>
-    <p>Минимальное потребление энергии, подходит для PowerBank.</p>
+  <div class="bg-white p-6 rounded shadow text-center">
+    <h3 class="font-bold text-xl mb-2">Энергосбережение</h3>
+    <p>Минимальное потребление энергии — работает долго на PowerBank.</p>
   </div>
 </section>
 
-<section id="download" class="p-8 text-center">
+<!-- Скачать прошивку -->
+<section id="download" class="container mx-auto p-8 text-center">
   <h2 class="text-2xl font-bold mb-4">Скачать прошивку</h2>
   <a href="https://github.com/ваш_логин/Light-Watcher/releases/latest/download/Light_Watcher_V1.0.bin" 
-     class="bg-blue-600 text-white px-6 py-3 rounded shadow hover:bg-blue-700">Скачать .bin</a>
+     class="bg-blue-600 text-white px-6 py-3 rounded shadow hover:bg-blue-700 transition">Скачать .bin</a>
+  <p class="mt-2 text-sm text-gray-600">Файл для ESP32, последняя версия прошивки.</p>
 </section>
 
-<section id="video" class="p-8 text-center">
+<!-- Видео -->
+<section id="video" class="container mx-auto p-8 text-center">
   <h2 class="text-2xl font-bold mb-4">Видеообзор</h2>
-  <iframe width="560" height="315" src="https://www.youtube.com/embed/ВашаСсылка" frameborder="0" allowfullscreen></iframe>
+  <iframe width="100%" height="315" src="https://www.youtube.com/embed/ВашаСсылка" 
+          title="Light-Watcher Demo" frameborder="0" allowfullscreen class="mx-auto"></iframe>
 </section>
 
-<footer class="bg-gray-800 text-white p-4 text-center">
-  <p>GitHub: <a href="https://github.com/ваш_логин/Light-Watcher" class="underline">Light-Watcher</a></p>
+<!-- Футер -->
+<footer class="bg-gray-800 text-white p-6 text-center">
+  <p>GitHub: <a href="https://github.com/ваш_логин/Light-Watcher" class="underline hover:text-blue-300">Light-Watcher</a></p>
+  <p>Telegram: <a href="https://t.me/ваш_бот" class="underline hover:text-blue-300">@LightWatcherBot</a></p>
+  <p class="text-sm mt-2">&copy; 2026 Light-Watcher</p>
 </footer>
 
 </body>
